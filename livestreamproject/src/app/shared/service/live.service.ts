@@ -21,7 +21,7 @@ export class LiveService {
   ) { }
 
   //Observable ready to work with a async datas and it is from native angular
-  public getLiverWithFlag(flag: string) : Observable<ResponsePageable>
+  public getLivesWithFlag(flag: string) : Observable<ResponsePageable>
   {
     return this.httpClient.get<ResponsePageable>(this.apiUrl + '?flag=' + flag)
   }
